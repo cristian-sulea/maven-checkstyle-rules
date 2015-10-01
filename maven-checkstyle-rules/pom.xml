@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+
+	<parent>
+		<groupId>net.sulea.cristian</groupId>
+		<artifactId>parent</artifactId>
+		<!-- <relativePath>../../parent/parent/pom.xml</relativePath> -->
+		<version>1.1</version>
+	</parent>
+
+	<artifactId>maven-checkstyle-rules</artifactId>
+	<packaging>jar</packaging>
+
+
+	<version>1.0</version>
+
+
+	<name>Maven Checkstyle Rules</name>
+	<description>A set of useful Maven™ checkstyle rules grouped in a project to be easily shared between projects.</description>
+	<url>http://cristian.sulea.net/projects/maven-checkstyle-rules/</url>
+
+	<inceptionYear>2015</inceptionYear>
+
+
+	<scm>
+		<connection>scm:git:git@github.com:cristian-sulea/maven-checkstyle-rules.git</connection>
+		<developerConnection>scm:git:git@github.com:cristian-sulea/maven-checkstyle-rules.git</developerConnection>
+		<url>https://github.com/cristian-sulea/maven-checkstyle-rules</url>
+	</scm>
+
+
+	<developers>
+		<developer>
+			<id>cristian.sulea</id>
+			<name>Cristian Sulea</name>
+			<email>cristian.sulea.79@gmail.com</email>
+			<url>http://cristian.sulea.net</url>
+			<roles>
+				<role>owner</role>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+3</timezone>
+		</developer>
+	</developers>
+
+
+</project>
