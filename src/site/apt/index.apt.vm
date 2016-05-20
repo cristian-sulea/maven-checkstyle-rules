@@ -1,0 +1,48 @@
+	-----
+	${project.description}
+	-----
+	Cristian Sulea
+	-----
+	2016-05-20
+	-----
+
+
+${project.name}
+	
+	${project.description}
+
+	Usage:
+
++--
+<build>
+  <plugins>
+
+    ...
+
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-checkstyle-plugin</artifactId>
+      <version>${version.plugin.checkstyle}</version>
+      <configuration>
+        <configLocation>checkstyle.xml</configLocation>
+      <dependencies>
+        <dependency>
+          <groupId>net.sulea.cristian</groupId>
+          <artifactId>maven-checkstyle-rules</artifactId>
+          <version>${project.version}</version>
+        </dependency>
+      </dependencies>
+    </plugin>
+
+    ...
+
+  </plugins>
+</build>
++--
+
+	* {{{./checkstyle.xml.html}checkstyle.xml}}
+	
+	[]
+
+
+#parse("${folderSiteResourcesParent}/footer.apt.vm")
