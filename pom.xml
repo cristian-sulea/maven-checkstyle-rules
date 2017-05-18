@@ -5,8 +5,8 @@
   <parent>
     <groupId>net.sulea.cristian</groupId>
     <artifactId>maven-project-parent</artifactId>
-    <relativePath>../maven-project-parentx/pom.xml</relativePath>
-    <version>2.1</version>
+    <relativePath>../maven-project-parent/pom.xml</relativePath>
+    <version>2.2</version>
   </parent>
 
   <artifactId>maven-checkstyle-rules</artifactId>
@@ -21,6 +21,7 @@
   <url>http://cristian.sulea.net/projects/maven-checkstyle-rules/</url>
 
   <inceptionYear>2015</inceptionYear>
+
 
   <organization>
     <name>Cristian Sulea</name>
