@@ -90,7 +90,9 @@
 
         <!-- Checks for Naming Conventions.                  -->
         <!-- See http://checkstyle.sf.net/config_naming.html -->
-        <module name="ConstantName"/>
+        <module name="ConstantName">
+          <property name="format" value="^log(ger)?|[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$"/>
+        </module>
         <module name="LocalFinalVariableName"/>
         <module name="LocalVariableName"/>
         <module name="MemberName"/>
@@ -152,11 +154,14 @@
 <!--         <module name="AvoidInlineConditionals"/> -->
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
-        <module name="HiddenField"/>
+        <module name="HiddenField">
+          <property name="ignoreConstructorParameter" value="true"/>
+          <property name="ignoreSetter" value="true"/>
+        </module>
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
         <module name="MagicNumber">
-          <property name="ignoreNumbers" value="-1, 0, 0.5, 1, 2, 4, 8, 16, 100, 255, 65280, 16711680"/>
+          <property name="ignoreNumbers" value="-1, 0, 0.5, 1, 2, 4, 8, 16, 100, 255, 1024, 65280, 16711680"/>
           <property name="ignoreFieldDeclaration" value="true"/>
         </module>
         <module name="MissingSwitchDefault"/>
